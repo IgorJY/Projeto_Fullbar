@@ -1,0 +1,26 @@
+1 - Corrigidas as discrepâncias da tabela SQL para que tenha informações ausentes para o tratamento de pontos utilizando o seguinte comando dml:
+
+UPDATE usuario
+SET cargo_id = 3
+WHERE usuario_nome = 'Gabriel'
+
+2  -  iniciado o projeto no node, 
+
+3 - instalação das dependencias express, knex e o mysql com o NPM
+
+4 - Definição da arquitetura router, controller e service: 
+   - o router, cuidando das respostas dos endpoints da API,
+   - o controller", que cuida das regras de negócio,
+   - o service, que lida com buscar e salvar no banco de dados
+
+5  -  criação dos arquivos ".env" e ".env.example" para cuidar das credenciais do banco de dados;
+
+6 - definida a necessidade de 3 endpoints:
+    post /vendas que faz a inserção das vendas na tabela "pontos",
+    get  /bonus, que retorna o bônus de todos os funcionários
+    get  /bonus/:cpf que retorna o bonus de um funcionário especifico através do filtro cpf,
+
+7 -  Criação de um script em Javascript para ler o CSV e fazer as requisições no endpoint /vendas, para cadastrar as vendas no banco de dados,
+
+
+8 - criação do script em SQL para a criação do arquivo "Arquivo.sql" para a consolidação dos pontos dos participantes ativos e da classificação de cada funcionário de acordo com a quantidade de pontos.

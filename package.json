@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/src/app.js",
-    "dev": "node --env-file=.env ./src/app.js",
-    "test": "jest --watchAll --collectCoverage"
+    "start": "node --env-file=.env ./src/app.js"
   },
   "keywords": [],
   "author": "",
